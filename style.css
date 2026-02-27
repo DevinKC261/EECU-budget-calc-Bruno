@@ -1,34 +1,107 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-nav {
-    display: flex;
-    flex-direction: row;
-    background-color: #0059A6;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 20px;
+:root {
+  --primary-color: #0059a6;
+  --housing-color: #8c63da;
+  --util-color: #f4cf3b;
+  --grocieries-color: #55c4ae;
+  --trans-color: #8979ff;
+  --shopping-color: #ffae4c;
+  --entertainment-color: #537ff1;
+  --subscriptions-color: #6fd195;
+  --health-color: #3cc3df;
+  --internet-color: #2bb7dc;
+  --education-color: #ff928a;
+  --savings-color: #6186cc;
+  --travel-color: #1f94ff;
+  --light-gray: #cecece;
+  --small-border-radius: 10px;
+  --big-border-radius: 20px;
+  --font-family: Arial, sans-serif;
 }
 
-nav img {
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #0059a6;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.salary, .investments, .business, .other {
+    /* The boxes for the mothly income section */
+    display: flex;
+  justify-content: space-between;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*Remove the align center for the h2(Monthly Income)*/
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 30vh;
+    height: 88vh;
+    border-radius: var(--big-border-radius);
+    border: 1px solid var(--light-gray);
+}
+
+aside > h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #2F733E;
+}
+
+aside > span {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--light-gray);
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+  width: 200px;
+  & > input {
+    width: 3vw;
+    min-width: 60px;
+    padding: 5px;
+    font-size: 16px;
+    box-shadow: 0 0 2px var(--light-gray);
+    border: 1px solid var(--light-gray);
+    border-radius: var(--small-border-radius);
+  }
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
-section {
-    background-color: white;
-    box-shadow: 2 2 2 black;
+aside > span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+aside {
+  background-color: white;
+  box-shadow: 2 2 2 black;
 }
 
 #income {
-
 }
