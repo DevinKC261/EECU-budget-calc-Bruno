@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Budget Calculator</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <nav>
-      <img src="images/menu.png" />
-      <h1>Budget Calculator</h1>
-      <img src="images/eecu.png" />
-    </nav>
-    <main>
-      <aside id="income">
-        <h2>Monthly Income</h2>
-        <span class="salary">
-            <img src="images/Frame.png" />
-            <p>Salary</p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Budget Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <img src="images/menu.png" />
+    <h1>Budget Calculator</h1>
+    <img src="images/eecu.png" />
+  </nav>
+
+  <main>
+    <section id="income" class="mainSection">
+      <h2>Monthly Income</h2>
+      <ul id="incomeList">
+        <li class="listItem">
+          <img src="images/Frame.png" />
+          <p>Salary</p>
           <input type="text" id="salary" name="salary" placeholder="$" />
-        </span>
-        <span class="investments">
-            <img src="images/Frame.png" />
-            <p>Investments</p>
+        </li>
+        <li class="listItem">
+          <img src="images/Frame.png" />
+          <p>Investments</p>
           <input type="text" id="investments" name="investments" placeholder="$" />
-        </span>
-        <span class="business">
-            <img src="images/Frame.png" />
-            <p>Business</p>
+        </li>
+        <li class="listItem">
+          <img src="images/Frame.png" />
+          <p>Business</p>
           <input type="text" id="business" name="business" placeholder="$" />
-        </span>
-        <span class="other">
-            <img src="images/Frame.png" />
-            <p>Other</p>
+        </li>
+        <li class="listItem">
+          <img src="images/Frame.png" />
+          <p>Other</p>
           <input type="text" id="other" name="other" placeholder="$" />
-        </span>
-      </aside>
-      <section id="analysis"></section>
-      <section id="expenses">
-        <h2>Monthly Expenses</h2>
-        <span> </span>
+        </li>
+      </ul>
+      <section id="totalIncome" class="totalCounter">
+        <p>Total Income:</p>
+        <p>$0.00</p>
       </section>
-    </main>
-  </body>
+    </section>
+    <section id="analysis" class="mainSection">
+      
+    </section>
+    <section id="expenses" class="mainSection">
+      <h2>Monthly Expenses</h2>
+      <ul id="expensesList">
+        <!-- Someone match the ids and names of the input fields -->
+        <li class="listItem">
+          <p>Housing</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Utilities</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Groceries</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Transportation</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Shopping</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Entertainment</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Subscriptions</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+        <li class="listItem">
+          <p>Health</p>
+          <input type="text" id="housing" name="housing" placeholder="$" />
+        </li>
+      </ul>
+      <section id="totalExpenses" class="totalCounter">
+        <p>Total Expenses:</p>
+        <p>$0.00</p>
+      </section>
+    </section>
+  </main>
+</body>
+
 </html>
