@@ -15,6 +15,7 @@
     <img src="images/eecu.png" />
   </nav>
 
+  <!-- INCOME SECTION -->
   <main>
     <section id="income" class="mainSection">
       <h2>Monthly Income</h2>
@@ -45,13 +46,33 @@
         <p>$0.00</span>
       </section>
     </section>
+
+
+    <!-- ANALYSTIS SECTION (CHART) -->
     <section id="analysis" class="mainSection">
-      
+      <canvas></canvas> <!-- Use this for chart when you get unlucky enough to get to it-->
+
+      <section class="analysisNumbers">
+        <!-- Content will probably be changed via javascript to alter the totals -->
+         <section class="analysisTotal">
+          <p class="label">Total Income</p>
+          <p class="incomeTotal">$7676</p>
+         </section>
+         <section class="analysisTotal">
+            <p class="label">Total Expenses</p>
+           <p class="expensesTotal">$6767</p>
+         </section>
+         <section class="analysisRemaining">
+           <h2>Remaining: </h2>
+           <h2>$909</h2>
+         </section>
+      </section>
     </section>
+
+    <!-- EXPENSES SECTION -->
     <section id="expenses" class="mainSection">
       <h2>Monthly Expenses</h2>
       <ul id="expensesList">
-        <!-- Someone match the ids and names of the input fields -->
         <li class="listItem">
           <div id="house"></div>
           <span>Housing</span>
